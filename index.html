@@ -31,6 +31,7 @@
             display: flex;
             justify-content: center;
             gap: 25px;
+            flex-wrap: wrap; /* Garante que o menu não quebre em telas pequenas */
         }
 
         nav a {
@@ -95,7 +96,7 @@
 
         h2 {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 60px; /* Aumentado para melhor espaçamento com o scroll */
             color: #1a1a1a;
         }
 
@@ -136,8 +137,9 @@
     <header>
         <nav>
             <a href="#perfil">Perfil</a>
-            <a href="#formacao">Formação</a>
             <a href="#objetivo">Objetivo</a>
+            <a href="#formacao">Formação</a>
+            <a href="#competencias">Competências</a>
             <a href="#projetos">Projetos</a>
         </nav>
     </header>
@@ -182,30 +184,44 @@
             </div>
         </div>
 
-        <div id="projetos">
-            <h2>🚀 Projetos e Competências</h2>
+        <div id="competencias">
+            <h2>🛠️ Competências Técnicas</h2>
             
             <div class="card">
-                <h3>Desenvolvimento de Portfólio Digital</h3>
-               
-                <span class="tech-tag">Web Design Básico</span>
-                <span class="tech-tag">HTML5 & CSS3</span>
-                <span class="tech-tag">GitHub Pages</span>
-            </div>
-
-            <div class="card">
-                <h3>Versionamento de Código</h3>
-                
-                <span class="tech-tag">Git</span>
-                <span class="tech-tag">GitHub</span>
-            </div>
-
-            <div class="card">
                 <h3>Lógica de Programação</h3>
-               
+                <p>Desenvolvimento de algoritmos e resolução de problemas estruturados.</p>
                 <span class="tech-tag">Python Básico</span>
             </div>
+
+            <div class="card">
+                <h3>Desenvolvimento Web</h3>
+                <p>Criação de interfaces responsivas e estruturação de conteúdo para web.</p>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Web Design</span>
+            </div>
+
+            <div class="card">
+                <h3>Versionamento e Ferramentas</h3>
+                <p>Controle de versões e hospedagem de projetos estáticos.</p>
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">GitHub</span>
+                <span class="tech-tag">GitHub Pages</span>
+            </div>
         </div>
+
+        <div id="projetos">
+            <h2>🚀 Projetos em Destaque</h2>
+            
+            <div class="card">
+                <h3>Portfólio Pessoal Digital</h3>
+                <p>Desenvolvimento deste site utilizando tecnologias web modernas para apresentação profissional.</p>
+                <span class="tech-tag">HTML5 & CSS3</span>
+                <span class="tech-tag">GitHub Pages</span>
+                <span class="tech-tag">Mobile Friendly</span>
+            </div>
+            
+            </div>
 
     </div>
 
