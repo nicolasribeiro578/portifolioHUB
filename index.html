@@ -31,7 +31,7 @@
             display: flex;
             justify-content: center;
             gap: 25px;
-            flex-wrap: wrap; /* Garante que o menu não quebre em telas pequenas */
+            flex-wrap: wrap;
         }
 
         nav a {
@@ -96,7 +96,7 @@
 
         h2 {
             text-align: center;
-            margin-top: 60px; /* Aumentado para melhor espaçamento com o scroll */
+            margin-top: 60px;
             color: #1a1a1a;
         }
 
@@ -130,6 +130,23 @@
             margin-top: 10px;
             margin-right: 5px;
         }
+
+        .btn-cv {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #00bcd4;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-cv:hover {
+            background-color: #008ba3;
+            box-shadow: 0 4px 15px rgba(0,188,212,0.4);
+        }
     </style>
 </head>
 <body>
@@ -141,6 +158,7 @@
             <a href="#formacao">Formação</a>
             <a href="#competencias">Competências</a>
             <a href="#projetos">Projetos</a>
+            <a href="#recomendacoes">Recomendações</a>
         </nav>
     </header>
 
@@ -155,8 +173,11 @@
             📧 <a href="mailto:nicolas.riber@gmail.com">E-mail</a> | 
             🔗 <a href="https://www.linkedin.com/in/nicolas-silveira-ribeiro-0125813ab/" target="_blank">LinkedIn</a> | 
             📺 <a href="https://www.youtube.com/channel/UCnMBDnnBK1_zIC-FOv4_iHQ" target="_blank">YouTube</a> |
-            💻 <a href="https://github.com/nicolasribeiro578" target="_blank">GitHub</a>
+            💻 <a href="https://github.com/nicolasribeiro578" target="_blank">GitHub</a> |
+            🌐 <a href="https://sites.google.com/view/portifolio-nicolashub/" target="_blank">portfolioHUB</a>
         </div>
+
+        <a href="#" class="btn-cv">📄 Baixar Currículo PDF</a>
     </section>
 
     <div class="container">
@@ -185,45 +206,55 @@
         </div>
 
         <div id="competencias">
-            <h2>🛠️ Competências Técnicas</h2>
+            <h2>🛠️ Competências e Idiomas</h2>
             
             <div class="card">
-                <h3>Lógica de Programação</h3>
-                <p></p>
+                <h3>Técnicas (Hard Skills)</h3>
                 <span class="tech-tag">Python Básico</span>
-            </div>
-
-            <div class="card">
-                <h3>Desenvolvimento Web</h3>
-                <p> </p>
-                <span class="tech-tag">HTML5</span>
-                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">HTML5 / CSS3</span>
                 <span class="tech-tag">Web Design</span>
+                <span class="tech-tag">Git / GitHub</span>
             </div>
 
             <div class="card">
-                <h3>Versionamento e Ferramentas</h3>
-                <p></p>
-                <span class="tech-tag">Git</span>
-                <span class="tech-tag">GitHub</span>
-            
+                <h3>Comportamentais (Soft Skills)</h3>
+                <span class="tech-tag">Trabalho em Equipe</span>
+                <span class="tech-tag">Rápido Aprendizado</span>
+                <span class="tech-tag">Comunicação Clara</span>
+                <span class="tech-tag">Proatividade</span>
+            </div>
+
+            <div class="card">
+                <h3>Idiomas</h3>
+                <p><strong>Português:</strong> Nativo</p>
+                <p><strong>Inglês:</strong> Básico (Em desenvolvimento)</p>
             </div>
         </div>
 
         <div id="projetos">
             <h2>🚀 Projetos em Destaque</h2>
-            
             <div class="card">
-                <h3>Portfólio Pessoal Digital</h3>
-                <p></p>
+                <h3>portfolioHUB</h3>
+                <p>Desenvolvimento de um portfólio digital completo integrado com Google Sites e ferramentas multimídia para apresentação de carreira.</p>
                 <span class="tech-tag">HTML</span>
-                <span class="tech-tag">GitHub</span>
-            
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Google Sites</span>
             </div>
-            
+        </div>
+
+        <div id="recomendacoes">
+            <h2>💬 Recomendações</h2>
+            <div class="card">
+                <p>"O Nicolas demonstra excelente capacidade de absorver novos conceitos e uma proatividade admirável em projetos de grupo. É um estudante focado e dedicado."</p>
+                <p><strong>— Referência Acadêmica</strong></p>
             </div>
+        </div>
 
     </div>
+
+    <footer style="text-align: center; padding: 40px; color: #888; font-size: 14px;">
+        <p>© 2026 Nicolas Silveira Ribeiro - Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
