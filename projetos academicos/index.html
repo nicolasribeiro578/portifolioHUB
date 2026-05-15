@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Digital | Nicolas Ribeiro</title>
+    <style>
+        /* Estilos Gerais e Animações */
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            transition: 0.3s;
+        }
+
+        /* Menu Superior */
+        header {
+            background-color: #1a1a1a;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+            transform: scale(1.1);
+        }
+
+        /* Seção de Perfil */
+        .profile-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(180deg, #eef2f3 0%, #f4f7f6 100%);
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid #00bcd4;
+            object-fit: cover;
+            margin-bottom: 15px;
+            transition: 0.5s;
+        }
+
+        .profile-img:hover {
+            transform: rotate(5deg) scale(1.05);
+        }
+
+        .links {
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        .links a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            transform: translateY(-5px);
+            color: #0056b3;
+        }
+
+        /* Container e Cartões */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 60px;
+            color: #1a1a1a;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: 0.4s;
+            border-left: 5px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-left: 5px solid #00bcd4;
+        }
+
+        .card h3 { margin-top: 0; color: #2c3e50; }
+        .card p { margin: 5px 0; color: #666; }
+        
+        .tech-tag {
+            display: inline-block;
+            background: #e1f5fe;
+            color: #01579b;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+
+        .btn-cv {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #00bcd4;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-cv:hover {
+            background-color: #008ba3;
+            box-shadow: 0 4px 15px rgba(0,188,212,0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#perfil">Perfil</a>
+            <a href="#objetivo">Objetivo</a>
+            <a href="#formacao">Formação</a>
+            <a href="#competencias">Competências</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#recomendacoes">Recomendações</a>
+        </nav>
+    </header>
+
+    <section id="perfil" class="profile-section">
+        <img src="foto.png" alt="Nicolas Ribeiro" class="profile-img">
+        <h1>Nicolas Silveira Ribeiro</h1>
+        <p style="max-width: 600px; margin: 10px auto; color: #555; line-height: 1.6;">
+            Estudante de Ciência da Computação pelo UniCEUB, apaixonado por tecnologia e focado em transformar desafios lógicos em soluções digitais inovadoras.
+        </p>
+        
+        <div id="contato" class="links">
+            📧 <a href="mailto:nicolas.riber@gmail.com">E-mail</a> | 
+            🔗 <a href="https://www.linkedin.com/in/nicolas-silveira-ribeiro-0125813ab/" target="_blank">LinkedIn</a> | 
+            📺 <a href="https://www.youtube.com/watch?v=ASF3zyGzJO4" target="_blank">YouTube</a> |
+            💻 <a href="https://github.com/nicolasribeiro578" target="_blank">GitHub</a> |
+            🌐 <a href="https://sites.google.com/view/portifolio-nicolashub/" target="_blank">portfolioHUB</a>
+        </div>
+
+        <a href="#" class="btn-cv">📄 Baixar Currículo PDF</a>
+    </section>
+
+    <div class="container">
+        
+        <div id="objetivo">
+            <h2>🎯 Objetivo Profissional</h2>
+            <div class="card">
+                <p style="font-style: italic; color: #444; font-size: 1.1em; line-height: 1.6;">
+                    Busco minha primeira oportunidade como estagiário, visando aplicar meus conhecimentos em Python e Web Design para solucionar problemas reais, enquanto expando minhas competências técnicas através da graduação em Ciência da Computação no UniCEUB.
+                </p>
+            </div>
+        </div>
+
+        <div id="formacao">
+            <h2>🎓 Formação Acadêmica</h2>
+            <div class="card">
+                <h3>Ciência da Computação</h3>
+                <p><strong>UniCEUB</strong></p>
+                <p>Início: Janeiro de 2026 | Conclusão: Dezembro de 2029</p>
+            </div>
+            <div class="card">
+                <h3>Ensino Médio Completo</h3>
+                <p>Escola Salesiana Brasília</p>
+                <p>Conclusão: Novembro de 2025</p>
+            </div>
+        </div>
+
+        <div id="competencias">
+            <h2>🛠️ Competências e Idiomas</h2>
+            
+            <div class="card">
+                <h3>Técnicas (Hard Skills)</h3>
+                <span class="tech-tag">Python Básico</span>
+                <span class="tech-tag">HTML5 / CSS3</span>
+                <span class="tech-tag">Web Design</span>
+                <span class="tech-tag">Git / GitHub</span>
+            </div>
+
+            <div class="card">
+                <h3>Comportamentais (Soft Skills)</h3>
+                <span class="tech-tag">Trabalho em Equipe</span>
+                <span class="tech-tag">Rápido Aprendizado</span>
+                <span class="tech-tag">Comunicação Clara</span>
+                <span class="tech-tag">Proatividade</span>
+            </div>
+
+            <div class="card">
+                <h3>Idiomas</h3>
+                <p><strong>Português:</strong> Nativo</p>
+                <p><strong>Inglês:</strong> Intermediário (Em desenvolvimento)</p>
+            </div>
+        </div>
+
+        <div id="projetos">
+            <h2>🚀 Projetos em Destaque</h2>
+            <div class="card">
+                <h3>portfolioHUB</h3>
+               
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Google Sites</span>
+            </div>
+        </div>
+
+        <div id="recomendacoes">
+            <h2>💬 Recomendações</h2>
+            <div class="card">
+              
+            </div>
+        </div>
+
+    </div>
+
+    <footer style="text-align: center; padding: 40px; color: #888; font-size: 14px;">
+        <p>© 2026 Nicolas Silveira Ribeiro - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
